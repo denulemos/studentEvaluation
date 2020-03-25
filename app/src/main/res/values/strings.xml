@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Student Evaluation Application</string>
+    <string name="result_txt">Student Evaluation Tool</string>
+    <string name="grade1">Math Grade</string>
+    <string name="grade2">Science Grade</string>
+    <string name="grade3">English Grade</string>
+    <string name="button">Calculate</string>
+</resources>
