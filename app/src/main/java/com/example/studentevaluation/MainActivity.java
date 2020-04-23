@@ -12,6 +12,15 @@ public class MainActivity extends AppCompatActivity {
     private EditText res1, res2, res3;
     private TextView result;
 
+    //ESTADOS DE UNA ACTIVITY
+    //On Create => Crear vista, llenar lista, recuperarestado previo si es que hay
+    //OnRestart => Llama al OnStart, se puede contar la cantidad de veces que la actividad fue reiniciada
+    //OnStart => Empieza activity
+    //OnResume => Ejecutar algo que estaba parado
+    //OnPause => Pausar algo que come mucho recurso, puede matar el proceso sin aviso pero guardando lo necesario
+    //OnStop => Pausa pero puede reiniciarse
+    //OnDestroy => Pausa y para volver se debe instanciar de vuelta
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
        resultEq = (n1 + n2 + n3 ) / 3;
 
        if (resultEq > 6){
+           //Setear texto con el resultado en el elemento TextView declarado anteriormente
            result.setText("El alumno esta aprobado, su promedio es " + String.valueOf(resultEq));
        }
        else{
